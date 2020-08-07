@@ -3,7 +3,7 @@ Web Panel for your CS:GO cheat.
 
 Features:
 - Auth
--- Login
+  - Login
 -- Register(requires invite)
 
 - Dashboard
