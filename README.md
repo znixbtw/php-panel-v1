@@ -27,7 +27,7 @@ Features:
 
 # SS
 - Dashboard
-https://codeine.is-inside.me/ZmLkMUS2.png
+![](https://codeine.is-inside.me/ZmLkMUS2.png)
 - Admin Panel
 https://codeine.is-inside.me/RWeHQMzn.png
 https://codeine.is-inside.me/PIEvwcH2.png
