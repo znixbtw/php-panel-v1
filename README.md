@@ -24,3 +24,15 @@ Features:
   - Get user data
   - Get cheat version
   - Get if cheat detected/undetected
+
+# SS
+- Dashboard
+https://codeine.is-inside.me/ZmLkMUS2.png
+- Admin Panel
+https://codeine.is-inside.me/RWeHQMzn.png
+https://codeine.is-inside.me/PIEvwcH2.png
+https://codeine.is-inside.me/B6feIdHA.png
+- User list
+https://codeine.is-inside.me/DLP7E9bx.png
+- Profile
+https://codeine.is-inside.me/mLoxgalD.png
