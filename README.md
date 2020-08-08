@@ -1,9 +1,9 @@
-# panel
+# About
 Web Panel for your CS:GO cheat.
 I tried to make it secure, but if you find any security issue please wite in the 'issues' tab.
 Only releasing it for the vacban.wtf community <3
 
-Features:
+# Features:
 - Auth
   - Login
   - Register(requires invite)
@@ -25,14 +25,14 @@ Features:
   - Get cheat version
   - Get if cheat detected/undetected
 
-# SS
+# Screenshots
 - Dashboard
 ![](https://codeine.is-inside.me/ZmLkMUS2.png)
 - Admin Panel
-https://codeine.is-inside.me/RWeHQMzn.png
-https://codeine.is-inside.me/PIEvwcH2.png
-https://codeine.is-inside.me/B6feIdHA.png
+![](https://codeine.is-inside.me/RWeHQMzn.png)
+![](https://codeine.is-inside.me/PIEvwcH2.png)
+![](https://codeine.is-inside.me/B6feIdHA.png)
 - User list
-https://codeine.is-inside.me/DLP7E9bx.png
+![](https://codeine.is-inside.me/DLP7E9bx.png)
 - Profile
-https://codeine.is-inside.me/mLoxgalD.png
+![](https://codeine.is-inside.me/mLoxgalD.png)
