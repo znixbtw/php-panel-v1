@@ -38,8 +38,8 @@ if ($webapi_key == $read_api)
     {
         $data_query = mysqli_query($mysqli, "SELECT * FROM users WHERE username ='" . $api_username."'");
         $data = mysqli_fetch_array($data_query);
-        $decode_password = base64_decode($data['password']);
-        if($api_password == $decode_password) 
+        //$decode_password = base64_decode($data['password']);
+        if(password_verify($api_password, $data['password'])) 
         {
             $data_json = array('id' => $data['id'], 'admin' => $data['admin'], 'hwid' => $data['hwid'], 'active' => $data['active'], 'banned' => $data['banned']);
             header('Content-type: text/javascript');
@@ -64,8 +64,8 @@ if ($webapi_key == $insert_api)
     {
         $data_query = mysqli_query($mysqli, "SELECT * FROM users WHERE username ='" . $api_username."'");
         $data = mysqli_fetch_array($data_query);
-        $decode_password = base64_decode($data['password']);
-        if($api_password == $decode_password) 
+        //$decode_password = base64_decode($data['password']);
+        if(password_verify($api_password, $data['password'])) 
         {
             $hwid_query = mysqli_query($mysqli, "UPDATE `users` SET `hwid` ='".$api_hwid."' WHERE username ='".$api_username."'");
         }
@@ -78,8 +78,8 @@ if ($webapi_key == $insert_api)
     {
         $data_query = mysqli_query($mysqli, "SELECT * FROM users WHERE username ='" . $api_username."'");
         $data = mysqli_fetch_array($data_query);
-        $decode_password = base64_decode($data['password']);
-        if($api_password == $decode_password) 
+        //$decode_password = base64_decode($data['password']);
+        if(password_verify($api_password, $data['password'])) 
         {
             $hwid_query = mysqli_query($mysqli, "UPDATE `users` SET `ip` ='".$api_ip."' WHERE username ='".$api_username."'");
         }
@@ -92,8 +92,8 @@ if ($webapi_key == $insert_api)
     {
         $data_query = mysqli_query($mysqli, "SELECT * FROM users WHERE username ='" . $api_username."'");
         $data = mysqli_fetch_array($data_query);
-        $decode_password = base64_decode($data['password']);
-        if($api_password == $decode_password) 
+        //$decode_password = base64_decode($data['password']);
+        if(password_verify($api_password, $data['password'])) 
         {
             $hwid_query = mysqli_query($mysqli, "UPDATE `users` SET `inject` ='".$api_inject."' WHERE username ='".$api_username."'");
         }
