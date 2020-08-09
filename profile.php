@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bind_param("si", $param_password, $param_id);
 
             // Set parameters
-            $param_password = base64_encode($new_password);
+            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
             $param_id = $_SESSION["id"];
 
             // Attempt to execute the prepared statement
