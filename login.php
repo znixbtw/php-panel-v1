@@ -55,10 +55,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ($stmt->num_rows == 1) {
 
                     // Bind result variables
-                    $stmt->bind_result($id, $username, $base64_password, $admin, $hwid, $active, $banned, $created_at, $inject, $ip);
+                    $stmt->bind_result($id, $username, $hash_password, $admin, $hwid, $active, $banned, $created_at, $inject, $ip);
                     if ($stmt->fetch()) {
-                        $decode = base64_decode($base64_password);
-                        if ($password == $decode) {
+                        //$decode = base64_decode($base64_password);
+                        if (password_verify($password, $hash_password)) {
 
                             // Password is correct, so start a new session
                             session_start();
