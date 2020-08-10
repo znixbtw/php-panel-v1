@@ -3,6 +3,9 @@ Web Panel for your CS:GO cheat.
 I tried to make it secure, but if you find any security issue please wite in the 'issues' tab.
 Only releasing it for the vacban.wtf community <3
 
+Admin acc (change ur pass)
+admin:1234567
+
 # Features:
 - Auth
   - Login
