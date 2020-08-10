@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 07, 2020 at 01:31 PM
+-- Generation Time: Aug 10, 2020 at 06:11 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.4.0
 
@@ -34,7 +34,14 @@ CREATE TABLE IF NOT EXISTS `invites` (
   `code` varchar(255) NOT NULL,
   `used` int(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`uid`)
-) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `invites`
+--
+
+INSERT INTO `invites` (`uid`, `code`, `used`) VALUES
+(1, 'admin_acc_invite', 1);
 
 -- --------------------------------------------------------
 
@@ -69,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `shoutbox` (
   `msg` varchar(255) NOT NULL,
   `time` datetime(6) NOT NULL DEFAULT current_timestamp(6),
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -92,7 +99,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `hwid` (`hwid`)
-) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `admin`, `hwid`, `active`, `banned`, `created_at`, `inject`, `ip`) VALUES
+(1, 'admin', '$2y$10$OUK4tSrF3aa3Qm0D/1TcU.iPq5Ptvzik3/OBaMcSSLiUqPOcuOTGy', 1, NULL, 0, 0, '2020-08-10 23:38:23', NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
