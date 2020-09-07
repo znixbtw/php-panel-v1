@@ -33,6 +33,5 @@
 <!-- Custom -->
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/scroll.css" />
-<link rel="stylesheet" href="assets/css/loader.css" />
 
 
